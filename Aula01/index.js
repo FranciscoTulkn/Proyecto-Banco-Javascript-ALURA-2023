@@ -5,27 +5,27 @@ class Cliente {
 
 class CuentaCorriente{
   numero;
-  saldo; 
+  #saldo; //Atributo con caracteristica de variable privada.
   agencia;
 
   // metodos
   // Metodo para inicializar los valores de los atributos de la cuenta corriente
   constructor (){
     this.numero = "";
-    this.saldo = 0;
+    this.#saldo = 0;
     this.agencia = "";
   }
 
   // Metodo para el deposito en la cuenta
   depositoEnCuenta(valor){
     if (valor > 0);
-      this.saldo += valor;
+      this.#saldo += valor;
   }
 
   // Metodo para el retiro en la cuenta
   retiroEnCuenta(valor){
-    if (valor <= this.saldo);
-      this.saldo -= valor;
+    if (valor <= this.#saldo);
+      this.#saldo -= valor;
   }
 }
 // // Constructor de cliente1
@@ -37,7 +37,7 @@ class CuentaCorriente{
 // const cuentaCorriente1 = new CuentaCorriente();
 
 // cuentaCorriente1.numero = "12345678";
-// cuentaCorriente1.saldo = 2000;
+// cuentaCorriente1.#saldo = 2000;
 
 // // Cosntructor cliente2
 // const Cliente2 = new Cliente();
@@ -49,7 +49,7 @@ class CuentaCorriente{
 // const cuentaCorriente2 = new CuentaCorriente();
 
 // cuentaCorriente2.numero = "98754";
-// cuentaCorriente2.saldo = 8000;
+// cuentaCorriente2.#saldo = 8000;
 
 
 // console.log(Cliente1);
