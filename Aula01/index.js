@@ -18,12 +18,14 @@ class CuentaCorriente{
 
   // Metodo para el deposito en la cuenta
   depositoEnCuenta(valor){
-    this.saldo += valor;
+    if (valor > 0);
+      this.saldo += valor;
   }
 
   // Metodo para el retiro en la cuenta
   retiroEnCuenta(valor){
-    this.saldo -= valor;
+    if (valor <= this.saldo);
+      this.saldo -= valor;
   }
 }
 // // Constructor de cliente1
@@ -60,5 +62,7 @@ class CuentaCorriente{
 const cuentaDeLuis = new CuentaCorriente();
 cuentaDeLuis.depositoEnCuenta(800);
 console.log(cuentaDeLuis.saldo);
-cuentaDeLuis.retiroEnCuenta(200);
+cuentaDeLuis.retiroEnCuenta(1000);
+console.log(cuentaDeLuis.saldo);
+cuentaDeLuis.depositoEnCuenta(-1000);
 console.log(cuentaDeLuis.saldo);
