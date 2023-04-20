@@ -6,15 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FranciscoTulkn/Curso-Orientaci-n-a-Objetos-con-JavaScript---ALURA-2023.git"
-  },
+
   "author": "Francisco Tulcan - ALURA",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FranciscoTulkn/Curso-Orientaci-n-a-Objetos-con-JavaScript---ALURA-2023/issues"
-  },
-  "homepage": "https://github.com/FranciscoTulkn/Curso-Orientaci-n-a-Objetos-con-JavaScript---ALURA-2023#readme",
   "type": "module"
 }
